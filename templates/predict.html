@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potato Disease Detected</title>
+    <link rel="stylesheet" href="../static/predict.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="color: green">Potato Disease Detected:</h1>
+    </header>
+    <main>
+      <!-- Removed the image uploaded because nilikuwa na shidaah ya kuidisplay -->
+      <!--<img src="data:image/png;base64,{{img}}" width="500">-->
+      <div class="result-container">
+        <h3>Potato Disease Prediction Result:</h3>
+
+        <p>{{message}}.</p>
+        <button class="back-btn">
+          <a
+            sytle="text-decoration: none;"
+            href="{{ url_for('index') }}"
+            class="button"
+            >Go Back</a
+          >
+        </button>
+      </div>
+      <br />
+      <p>Thank you for using our application</p>
+
+      <footer>
+        <p>&copy; 2023 Santo. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>

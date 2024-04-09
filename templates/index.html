@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Potato Disease Detection</title>
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="color: orange">Potato Disease Detection</h1>
+      <p class="description">
+        A Potato Disease detection web application that detects either a leaf
+        potato has blue blight, light blight disease or its healthy
+      </p>
+      <p class="upload-message">
+        Kindly upload a photo of the leaf potato Below
+      </p>
+      <form
+        class="upload-form"
+        action="/"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <div class="form-group">
+          <label for="file-upload">Choose an image:</label>
+          <input id="file-upload" type="file" name="file" />
+        </div>
+        <button class="btn-submit" type="submit">Upload</button>
+      </form>
+    </div>
+  </body>
+</html>
